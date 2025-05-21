@@ -51,7 +51,10 @@ public class ListaInt {
                         else
                             aux = aux.prox;
                     }
-                    aux.prox = aux.prox.prox;
+                    if (achou)
+                        aux.prox = aux.prox.prox;
+                    else
+                        System.out.println("Valor não encontrado!");
                 }
         }
     }

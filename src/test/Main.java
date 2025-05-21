@@ -15,7 +15,17 @@ public class Main {
         while (valor >= 0) {
             lista.insere(valor);
             lista.print();
-            System.out.print("\nInforme um valor positivo para inserir ou um valor negativo para encerrar: ");
+            System.out.print("\nInforme um valor positivo para inserir ou um valor negativo para encerrar essa operação: ");
+            valor = kb.nextInt();
+        }
+
+        System.out.print("\nInforme um valor positivo para remover ou um valor negativo para encerrar: ");
+        valor = kb.nextInt();
+
+        while (valor >= 0) {
+            lista.remove(valor);
+            lista.print();
+            System.out.print("\nInforme um valor positivo para remover ou um valor negativo para encerrar essa operação: ");
             valor = kb.nextInt();
         }
 
